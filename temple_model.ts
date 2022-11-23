@@ -3,10 +3,9 @@ class Playground {
     engine: BABYLON.Engine,
     canvas: HTMLCanvasElement
   ): BABYLON.Scene {
-    // This creates a basic Babylon Scene object (non-mesh)
-    var scene = new BABYLON.Scene(engine);
+    const scene = new BABYLON.Scene(engine);
 
-    var camera = new BABYLON.ArcRotateCamera(
+    const camera = new BABYLON.ArcRotateCamera(
       "camera",
       0,
       Math.PI / 2,
